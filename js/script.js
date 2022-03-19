@@ -25,4 +25,6 @@ class Pokemons {
   }
 }
 
-const app = new Pokemons();
+class PokemonProfile {}
+
+const pokemons = new Pokemons();
