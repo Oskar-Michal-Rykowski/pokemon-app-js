@@ -6,8 +6,6 @@ class Pokemons {
 
   getElements() {
     this.pokemonsSection = document.querySelector('.pokemons');
-
-    // this.pokemons = ['Alibaba', 'Babajaga', 'Superman'];
   }
 
   fetchPokemons() {
