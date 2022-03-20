@@ -1,0 +1,36 @@
+/* VARIABLES */
+$brand-color: gray;
+$font-brand-color: white;
+
+/* NAVIGATION */
+.navigation {
+  background-color: $brand-color !important;
+  border-radius: 100px;
+  padding: 5px 10px;
+  margin-top: 10px;
+
+  a {
+    color: $font-brand-color !important;
+  }
+
+  .menu-element {
+    position: absolute;
+    right: 10px;
+  }
+}
+
+/* POKEMONS */
+
+.pokemons {
+  margin: 10px 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: orange;
+
+  .pokemon {
+    margin-bottom: 10px;
+    width: 300px;
+  }
+}
