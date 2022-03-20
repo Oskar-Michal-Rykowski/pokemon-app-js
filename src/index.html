@@ -9,23 +9,57 @@
 </head>
 
 <body>
-    <div class="container">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light navigation">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Pokemon App</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse menu-element" id="navbarSupportedContent">
-                    <a class="nav-link active " aria-current="page" href="#">BROWSE POKEMONS</a>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navigation">
+        <div class="background container-fluid">
+            <img class="main-image" src="./images/main-photo.jpg" alt="pokemon-background">
+            <div class="gradient"></div>
+            <a class="navbar-brand brand-text" href="#">POKEM<br><span class="brand-color">ON</span></a>
+            <button class="hamburger navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarSupportedContent">
+                <div class="menu-element-up collapse navbar-collapse">
+                    <a class="nav-link active " aria-current="page" href="#about">ABOUT</a>
+                </div>
+                <div class="menu-element-down collapse navbar-collapse">
+                    <a class="nav-link active " aria-current="page" href="#">BROWSE</a>
                 </div>
             </div>
-        </nav>
+        </div>
+    </nav>
+    <section id="about" class="about">
+        <div class="row align-items-start">
+            <div class="col-12 col-lg-4">
+                <h1 class="title">
+                    About<br><span class="brand-color">the app</span>
+                </h1>
+            </div>
+            <div class="col-12 col-lg-8">
+                <p class="describtion">
+                    This app is about pokemons. I created this to practice programming in clean JS. In the future I will
+                    provide similar app in React. The data has been provided by Pokemon TCG API. There are tousends of
+                    pokemons in the base. The app is downloading only 10 creatures.
 
-        <section class="pokemons"></section>
+                </p>
+            </div>
+        </div>
+        <div class="about-links row">
+            <div class="col">
+                <a href="#" type=" button" class="link-react">REACT VERSION</a>
+            </div>
+            <div class="col">
+                <a href="#pokemons" type=" button" class="link-pokemons">POKEMONS</a>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="container">
+        <section id="pokemons" class="pokemons"></section>
 
         <section class="card active"></section>
 
